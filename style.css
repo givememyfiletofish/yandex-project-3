@@ -1,0 +1,442 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+body {
+  margin: 0;
+  background: #2a2c2f;
+}
+
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/***************** HEADER SECTION *****************/
+.header {
+  display: flex;
+  margin: auto;
+  padding-top: 34px;
+  max-width: 984px;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__lang-link {
+  margin-right: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  transition: opacity 0.3s;
+}
+.header__lang-link:hover {
+  opacity: 0.5;
+}
+
+.header__lang-link:last-child {
+  margin-right: 0;
+  text-decoration-line: none;
+}
+
+/****************** LEAD SECTION ****************/
+.lead {
+  max-width: 984px;
+  margin: 58px auto 0;
+}
+
+.lead__title {
+  margin: auto;
+  width: 720px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.lead__subtitle {
+  margin: 32px auto 0;
+  width: 620px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.lead__image {
+  width: 100%;
+  height: 615px;
+  margin-top: 64px;
+  background: url(/images/lead-mountains.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.lead__caption {
+  margin-top: 8px;
+  width: 183px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/************************* INTRO SECTION *********************/
+.intro {
+  margin-left: calc((100% - 984px) / 2);
+  margin-top: 92px;
+  max-width: 690px;
+}
+
+.intro__title {
+  margin: 0;
+  width: 100%;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+
+  color: #ffffff;
+}
+
+.intro__subtitle {
+  margin: 40px 0 0;
+  width: 100%;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+
+  color: #ffffff;
+}
+
+.intro__text {
+  margin: 32px 0 0;
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #ffffff;
+}
+
+.intro__list {
+  margin: 32px 0 0;
+  padding: 0;
+  width: 100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+
+  list-style: none;
+}
+.intro__list-stats {
+  font-weight: normal;
+}
+
+/********************** PHOTO GRID SECTION ******************/
+.photo-grid {
+  margin: 92px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+  gap: 16px;
+  width: 1184px;
+  /* height: 671px; */
+}
+
+.photo-grid__item {
+  width: 284px;
+  height: 213px;
+  object-fit: cover;
+}
+
+/****************** PLACES SECTION ****************************/
+.places {
+  margin: 92px auto 0;
+  max-width: 984px;
+}
+
+.place {
+  margin-top: 80px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 48px;
+  column-gap: 40px;
+}
+
+.place__title {
+  margin: 0;
+  width: 100%;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #ffffff;
+}
+
+.place__image {
+  width: 460px;
+  height: 460px;
+  object-fit: cover;
+}
+
+.place__website {
+  margin: 0;
+  width: 100%;
+  align-self: flex-end;
+}
+
+.place__url-heading {
+  margin: 0 0 12px;
+  width: 100%;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+
+  letter-spacing: 0.2em;
+
+  color: #aaaaaa;
+}
+
+.place__link {
+	width: 100%;
+	font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #ffffff;
+  transition: opacity 0.3s;
+}
+.place__link:hover {
+  opacity: 0.5;
+}
+
+.place__paragraph {
+  margin: 24px 0 0;
+  width: 100%;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.place__paragraph:first-of-type {
+  margin-top: 0;
+}
+
+/* ******************* COVER SECTION ************************* */
+.cover {
+  position: relative;
+  margin: 92px auto 0;
+  max-width: 1184px;
+  height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cover:hover .cover__overlay {
+  opacity: 0.8;
+}
+
+.cover__title {
+  margin: 0;
+  width: 656px;
+  height: 76px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+
+  text-align: center;
+
+  color: #fffdfd;
+  z-index: 1;
+}
+
+.cover__subtitle {
+  margin: 32px 0 0;
+
+  width: 320px;
+  height: 66px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+
+  text-align: center;
+
+  color: #ffffff;
+  z-index: 1;
+}
+.cover__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: #2a2c2f;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.cover__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("./images/cover-route-66.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ***************** FOOTER SECTION ****************** */
+.footer {
+  margin: 92px auto 0;
+  max-width: 1184px;
+  height: 18px;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer__link-list-item {
+  margin-right: 18px;
+}
+.footer__link-list-item:last-child {
+  margin-right: 0;
+}
+
+.footer_link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  transition: opacity 0.3s;
+}
+.footer_link:hover {
+  opacity: 0.5;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .page {
+    max-width: 1024px;
+  }
+/* ***************************************************** */
+  .header {
+    max-width: 928px;
+  }
+
+/* ************************************************** */
+  .lead {
+    max-width: 928px;
+    margin-top: 50px;
+  }
+  .lead__image {
+    height: 580px;
+  }
+
+/* ************************************************* */
+
+  .intro {
+	margin-left: calc((100% - 928px) / 2);
+  }
+
+  /* *********************************************** */
+  .photo-grid{
+	  width: 928px;
+	  gap: 14px;
+  }
+  .photo-grid__item {
+	  width: 300px;
+	  height: 225px;
+  }
+
+/* ********************************************************** */
+
+  .places{
+	  max-width: 928px;
+  }
+
+  .place{
+	column-gap: 32px;
+  }
+  .place__image {
+	width: 440px;
+	height: 440px;
+  }
+
+/* ****************************************** */
+  .cover{
+	  max-width: 1024;
+	  height: 640px;
+  }
+
+  /* ****************************************************** */
+  .footer{
+	  max-width: 928px;
+	  
+
+  }
+}
