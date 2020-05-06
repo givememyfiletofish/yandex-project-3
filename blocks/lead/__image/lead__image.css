@@ -2,10 +2,12 @@
   width: 100%;
   min-height: 615px;
   margin-top: 64px;
-  background: url("../../../images/lead-mountains.jpg");
+  object-fit: cover;
+  object-position: center;
+  /* background: url("../../../images/lead-mountains.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 @media screen and (max-width: 1024px) {
